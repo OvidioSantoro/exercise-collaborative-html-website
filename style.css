@@ -1,0 +1,26 @@
+/* Estilos de la navbar */
+.navbar{
+    height: 5vh;
+}
+
+/* Estilos de la imagen principal */
+.imagen-principal-div{
+    width: 100%;
+    height: 95vh;
+}
+
+.imagen-principal{
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos del Carousel */
+#carousel-pepe{
+    width: 80vw;
+    height: 20vh;
+    margin: auto;
+}
+
+.carousel-image{
+    height: 40vh;
+}
