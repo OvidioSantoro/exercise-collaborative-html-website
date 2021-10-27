@@ -1,7 +1,11 @@
 /* ESTILOS GLOBALES */
 
+body{
+    position: relative;
+}
+
 /* ESTILOS DE LA MITAD SUPERIOR DE LA PÁGINA: */
-/* Navbar | Hero Image | Carousel | TODO */
+/* Navbar | Hero Image |Presentación | Carousel | TODO */
 
 /* Estilos de la navbar */
 .navbar{
@@ -9,22 +13,47 @@
 }
 
 /* Estilos de la Hero Image */
-.imagen-principal-div{
-    width: 100%;
+.hero-image-div{
     height: 95vh;
 }
 
-.imagen-principal{
-    width: 100%;
+.hero-image{
     height: 100%;
+    width: 100vw;
+    object-fit: cover;
+}
+
+/* Estilos de la presentación */
+
+.presentacion{
+    max-height: 45vh;
+    margin: 2% auto 2% auto;
+    display: flex;
+}
+
+.presentacion-imagen{
+    max-height: 45vh;
+}
+
+.presentacion-texto{
+    max-height: 100%;
+    padding-left: 5%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.texto-presentacion p{
+    margin: 3% 0 3% 0;
 }
 
 /* Estilos del Carousel */
-#carousel-pepe{
+#carousel-novedades{
+    height: auto;
     width: 80vw;
-    margin: auto;
+    margin: 5vh auto 5vh auto;
 }
 
 .carousel-image{
     height: 60vh;
+    object-fit: cover;
 }
