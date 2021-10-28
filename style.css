@@ -5,7 +5,7 @@ body{
 }
 
 /* ESTILOS DE LA MITAD SUPERIOR DE LA PÁGINA: */
-/* Navbar | Hero Image |Presentación | Carousel | TODO */
+/* Navbar | Hero Image | Presentación | Carousel | Biografía | TODO */
 
 /* Estilos de la navbar */
 .navbar{
@@ -55,5 +55,21 @@ body{
 
 .carousel-image{
     height: 60vh;
+    width: 80vw;
     object-fit: cover;
+}
+
+/* Estilos de la biografía */
+.biografía{
+    width: 80vw;
+    margin: 1% auto 1% auto;
+    padding: 1%;
+    border: 1px solid black;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bio-secciones{
+    height: 100%;
+    margin: auto;
 }
