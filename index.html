@@ -1,22 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" class="">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>Mise&Place</title>
 </head>
 <body>
     
 
     <!-- FOOTER 
-    Segunda sección del landing page
+    Segunda sección del landing page, se encontrará con tres containers para dividir la información relevante a:
+        1.- Recetas 
+        2.- Staff
+        3.- Newsletter
+   
     -->
 
+   
+    <!-- Recetas 
+    Sección realizada con un container fluid, que incluye un row para indicar Titulo y Descripción más un NAV TABS que contiene tres CARD GROUP, para mostrar tres CARDS según el tipo con su contenido y fotografía. 
+        
+    -->
+    
+    <div class="container-fluid">
 
-    <!-- Portfolio Recetas -->
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="title">
+            <h1>Hazlo tú mismo</h1>
+          </div>
+          <div class="description">
+            <p class="text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+          </div>
+
+        </div>        
+
+      </div>
+    
+        <nav>
+            <div class= "nav nav-tabs justify-content-center" id="nav-tab" role="tablist";>
+              <button class="nav-link active text-danger" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Degustación</button>
+              <button class="nav-link text-danger" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tradicional</button>
+              <button class="nav-link text-danger" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Temporada</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="card-group">
+                    <div class="card">
+                      <img src="https://image.freepik.com/foto-gratis/surtido-bocadillos_144627-33623.jpg" class="card-img-top" alt="receta 1 de ejemplo de sección GOURMET">
+                      <div class="card-body">
+                        <h5 class="card-title">Receta #1</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>                        
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://image.freepik.com/foto-gratis/bocadillos-tocino-tapas-tradicionales-espanolas_144627-42599.jpg" class="card-img-top" alt="receta 2 de ejemplo de sección GOURMET">
+                      <div class="card-body">
+                        <h5 class="card-title">Receta #2</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://image.freepik.com/foto-gratis/champinones-queso-tapas-tradicionales-espanolas_144627-42605.jpg" class="card-img-top" alt="receta 3 de ejemplo de sección GOURMET">
+                      <div class="card-body">
+                        <h5 class="card-title">Receta #3</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                                         
+            
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="card-group">
+                    <div class="card">
+                      <img src="https://image.freepik.com/foto-gratis/barbacoa-carne-rodajas-servida-cebolla-sal-marina_114579-7238.jpg" class="card-img-top" alt="receta 1 de ejemplo de sección TRADICIONAL">
+                      <div class="card-body">
+                        <h5 class="card-title">Receta #1</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://image.freepik.com/foto-gratis/surtido-comidas-tradicionales-nasi-lemak_23-2149056812.jpg" class="card-img-top" alt="receta 2 de ejemplo de sección TRADICIONAL">
+                      <div class="card-body">
+                        <h5 class="card-title">Receta #2</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://image.freepik.com/foto-gratis/comida-tradicional-nasi-lemak_23-2149056868.jpg" class="card-img-top" alt="receta 3 de ejemplo de sección TRADICIONAL">
+                      <div class="card-body">
+                        <h5 class="card-title">Receta #3</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+                
+            
+            <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="card-group">
+                    <div class="card">
+                      <img src="https://static.comunicae.com/photos/notas/1193181/1518086384_La_Gaditana_Plato.JPG" class="card-img-top" alt="receta 1 de ejemplo de sección VANGUARDISTA">
+                      <div class="card-body">
+                        <h5 class="card-title">Receta #1</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://www.animalgourmet.com/wp-content/uploads/2018/11/PassionPPDC-05-2018-60-e1543199266309.jpg" class="card-img-top" alt="receta 2 de ejemplo de sección VANGUARDISTA">
+                      <div class="card-body">
+                        <h5 class="card-title">Receta #2</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://www.elclaustro.edu.mx/claustronomia/media/k2/items/cache/c6db11a71571f6269d8aa754fc40212f_XL.jpg" class="card-img-top" alt="receta 3 de ejemplo de sección VANGUARDISTA">
+                      <div class="card-body">
+                        <h5 class="card-title">Receta #3</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+    
+    <!-- Staff
+    Sección realizada con una CARD 
+
+    -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="title">
+          <h1>Equipazo detrás de Mise&Place</h1>
+        </div>
+        <div class="description">
+          <p class="text-break">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        </div>
+
+      </div>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class= "card mb-0" style="max-width: 100%;">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://elbohio.net/files/sites/399/2020/11/bohio-pepe-3.jpg" class="img-fluid rounded-start" alt="Fotografía de Pepe Rodriguez con parte de su equipo">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">TEAM</h5>
+                    <p class="card-text"> Con el tiempo, y con los compromisos televisivos, mis funciones han cambiado en El Bohío. De ejecutar, he pasado a pensar. A diseñar. A probar. A coordinar. Ahora soy el conductor del tráfico. El que canta comandas: “dos bacalaos para la tres, tres pringás para la cuatro, unos callos para la ocho”.  Yo dirijo el tráfico. Ellos conducen y te llevan a tu destino. Yo dirijo la orquesta y mi equipazo compone una sinfonía gastronómica manchega para ti. </p>
+                    <p class="card-text"> Entre todos movemos todas las piezas para conseguir la perfección, aunque, como decía el gran chef francés Joël Robuchon, “sabemos que la perfección no es de este mundo”.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class= "card mb-0" style="max-width: 100%;">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://elbohio.net/files/sites/399/2020/11/bohio-pepe-5.jpg" class="img-fluid rounded-start" alt="Fotografía de Pepe Rodriguez con parte de su equipo">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">TEAM</h5>
+                    <p class="card-text"> Con el tiempo, y con los compromisos televisivos, mis funciones han cambiado en El Bohío. De ejecutar, he pasado a pensar. A diseñar. A probar. A coordinar. Ahora soy el conductor del tráfico. El que canta comandas: “dos bacalaos para la tres, tres pringás para la cuatro, unos callos para la ocho”.  Yo dirijo el tráfico. Ellos conducen y te llevan a tu destino. Yo dirijo la orquesta y mi equipazo compone una sinfonía gastronómica manchega para ti. </p>
+                    <p class="card-text"> Entre todos movemos todas las piezas para conseguir la perfección, aunque, como decía el gran chef francés Joël Robuchon, “sabemos que la perfección no es de este mundo”.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class= "card mb-0" style="max-width: 100%;">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="https://elbohio.net/files/sites/399/2020/11/bohio-pepe-4.jpg" class="img-fluid rounded-start" alt="Fotografía de Pepe Rodriguez con parte de su equipo">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">TEAM</h5>
+                    <p class="card-text"> Con el tiempo, y con los compromisos televisivos, mis funciones han cambiado en El Bohío. De ejecutar, he pasado a pensar. A diseñar. A probar. A coordinar. Ahora soy el conductor del tráfico. El que canta comandas: “dos bacalaos para la tres, tres pringás para la cuatro, unos callos para la ocho”.  Yo dirijo el tráfico. Ellos conducen y te llevan a tu destino. Yo dirijo la orquesta y mi equipazo compone una sinfonía gastronómica manchega para ti. </p>
+                    <p class="card-text"> Entre todos movemos todas las piezas para conseguir la perfección, aunque, como decía el gran chef francés Joël Robuchon, “sabemos que la perfección no es de este mundo”.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      
+
+    
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Suscripción al NEWSLETTER
+    Sección realizada con un FORM sencillo para solicitar el email si desea suscribirse al newsletter.
+
+    -->
+
+    <div class="container-fluid">
+
+      <div class="row">
+          <div class="title">
+            <h1>¿Te encanta cocinar?</h1>
+          </div>
+          <div class="description">
+            <p class="text-break">Pepe tiene un estupendo regalo para ti. ¡Descrubelo!
+              Pero primero debes dejarnos tu email</p>
+          </div>
+
+      </div>
+   
+
+      <div class="card-body">
+          <div class="mx-auto card bg-light mb-3" style="max-width: 30rem">
+          <form>
+            <div class="mb-3">
+              <input type="Email" id="Email" class="form-control" placeholder="Email" />
+            </div>
+            <button type="sutmit" class="btn btn-primary" style="width: 100%">Enviar</button>
+          </form>
+          </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
