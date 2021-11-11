@@ -1,6 +1,6 @@
 /* ESTILOS GLOBALES */
 body{
-    background-color: #eae6e1;
+    background-color: #F9F7F3;
 }
 
 
@@ -9,25 +9,24 @@ body{
 
 
 /* Estilos de la navbar */
-.navbar{
-    height: 8vh;
-    font-size: 1.5rem;
-    line-height: 8vh;    
 
+.navbar{
+    min-height: 8vh;
 }
 
-.navbar-brand{
-    width: 6vw;
-    height: 8.8vh;
-    background: lightgray;
-    margin: 0;
+.navbar-brand {
+}
+
+.navbar-logo{
+    max-height: 8vh;
+    background: white;
 }
 
 
 /* Estilos del Carousel-Hero Image */
 
 .carousel-image{
-    height: 95vh;
+    height: 90vh;
     object-fit: cover;
     opacity: 70%;
 }

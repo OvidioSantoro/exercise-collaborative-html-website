@@ -1,0 +1,15 @@
+.navbar{
+    height: 8vh;
+    font-size: 1.5rem;
+}
+
+.navbar-brand {
+    width: 6vw;
+    height: 100%;
+}
+
+.navbar-logo{
+    background: lightgray;
+    width: 100%;
+    height: 100%;
+}
