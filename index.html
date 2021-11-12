@@ -16,8 +16,8 @@
     <!-- Navbar con links a cada sección de la Landing Page. La Navbar permanece "pegada" a la parte superior de la vista  -->
     <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="img-fluid navbar-logo" src="./assets/resources/img/LogoPepe.png"
-                    alt="Webpage Logo"></a>
+            <a class="navbar-brand" href="#"><img class="img-fluid navbar-logo"
+                    src="./assets/resources/img/LogoPepe.svg" alt="Webpage Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
                         <a class="nav-link h-100" href="#">Recetas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h-100" href="#">Nuestro equipo</a>
+                        <a class="nav-link h-100" href="#">Equipo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link h-100" href="#">Contacto</a>
@@ -62,7 +62,7 @@
             <div class="carousel-item active translucent-layer">
                 <img src="https://i.postimg.cc/sfPsP9kt/peperodriguez.jpg" class="d-block w-100 carousel-image"
                     alt="Pepe Rodriguez Rey" />
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h1>Descubre El Bohío</h1>
                     <h4>Acompáñanos en un paseo por El Bohío, el espectacular restaurante de Pepe Rodríguez Rey, y por
                         su galardonada bodega.</h4>
@@ -71,7 +71,7 @@
             <div class="carousel-item translucent-layer">
                 <img src="https://elbohio.net/files/sites/399/2020/11/bohio-restaurante-1.jpg"
                     class="d-block w-100 carousel-image" alt="El restaurante de Pepe Rodríguez">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h1>Second slide label</h1>
                     <h4>Some representative placeholder content for the second slide.</h4>
                 </div>
@@ -79,7 +79,7 @@
             <div class="carousel-item translucent-layer">
                 <img src="https://i.postimg.cc/rF8cfRcz/1589211451891.jpg" class="d-block w-100 carousel-image"
                     alt="El restaurante de Pepe Rodríguez">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h1>Pepe en Masterchef</h1>
                     <h4>¡Haz un repaso por los mejores momentos del chef como jurado de Masterchef!</h4>
                 </div>
@@ -146,147 +146,393 @@
     </div>
 
 
-    <div class="info-div">
-        <ul class="nav nav-pills nav-fill mb-3" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link info-button active" id="info-pepe-tab" data-bs-toggle="pill"
-                    data-bs-target="#info-pepe" type="button" role="tab" aria-controls="info-pepe" aria-selected="true">
-                    <div class="info-button-content">
-                        <span class="info-button-text">PEPE</span class="info-button-text">
-                        <img class="info-button-image" src="./assets/resources/img/textura-cafe.jpg" alt="Botón Pepe">
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link info-button" id="info-bohio-tab" data-bs-toggle="pill"
-                    data-bs-target="#info-bohio" type="button" role="tab" aria-controls="info-bohio"
-                    aria-selected="false">
-                    <div class="info-button-content">
-                        <span class="info-button-text">BOHÍO</span class="info-button-text">
-                        <img class="info-button-image" src="./assets/resources/img/textura-helado.jpg"
-                            alt="Botón Bohío">
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link info-button" id="info-masterchef-tab" data-bs-toggle="pill"
-                    data-bs-target="#info-masterchef" type="button" role="tab" aria-controls="info-masterchef"
-                    aria-selected="false">
-                    <div class="info-button-content">
-                        <span class="info-button-text">MASTERCHEF</span class="info-button-text">
-                        <img class="info-button-image" src="./assets/resources/img/textura-mermelada.jpg"
-                            alt="Botón Masterchef">
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link info-button" id="info-premios-tab" data-bs-toggle="pill"
-                    data-bs-target="#info-premios" type="button" role="tab" aria-controls="info-premios"
-                    aria-selected="true">
-                    <div class="info-button-content">
-                        <span class="info-button-text">PREMIOS</span class="info-button-text">
-                        <img class="info-button-image" src="./assets/resources/img/textura-fresas.jpg"
-                            alt="Botón Premios">
-                    </div>
-                </button>
-            </li>
-        </ul>
+    <!-- 
+        Biografía e información adicional. Está incluida en un grid para intercambiar entre dos formatos dependiendo del tamaño del dispositivo.
+        En dispositivos grandes, esta sección se muestra como tabs con pills que cambian la información de una caja bajo ellos. En dispositivos 
+        de tamaño menor, se muestra como un "accordion" con los botones uno sobre el otro.
+    -->
 
-        <div class="tab-content info-tabs">
-            <div class="tab-pane fade show active" id="info-pepe" role="tabpanel" aria-labelledby="info-pepe-tab">
-                <p>
-                    Pepe
-                    Rodríguez se crio en el entorno del restaurante familiar El Bohío, fundado como casa de comidas en
-                    1934
-                    por su abuela Valentina y su tía abuela Romana. Su padre, Diego Rodríguez Vallejo, fue novillero y
-                    fotógrafo taurino. Sus padres pasaron a hacerse cargo del restaurante y, al acabar Pepe el instituto
-                    (una época bastante dura para él), empezó a trabajar como camarero. Cuando su madre no pudo hacerse
-                    cargo de la cocina, tanto Pepe como su hermano Diego (actual jefe de sala) empezaron a turnarse
-                    entre
-                    los
-                    fogones.
-                    Comenzó a trabajar en la cocina con 22 años, y a esa misma edad presidía Amidemar, una asociación de
-                    ayuda al
-                    toxicómano en Illescas: "Salía de la cocina y me iba a echar un cable a chavales que lo estaban
-                    pasando
-                    mal".
-                </p>
-                <p>
-                    Vitoria fue donde conoció a los principales cocineros españoles y franceses de los años 80, y a las
-                    figuras actuales. En las vacaciones cuando no trabajaba en El Bohío iba allí para aprender de
-                    grandes
-                    maestros de la cocina. Sus principales mentores fueron Martín Berasategui y Ferrán Adriá.
-                    Ha afirmado que de pequeño quería ser cantante, pero que al empezar a trabajar en el restaurante
-                    descubrió su pasión como cocinero: "La cocina es mi pasión, cada día puedo hacer algo nuevo. Ésta es
-                    la
-                    grandeza
-                    del oficio".
-                </p>
+    <div class="row">
+        <div class="col d-none d-md-block col-lg-12">
+            <div class="info-div">
+                <ul class="nav nav-pills nav-justified mb-3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link info-button active" id="info-pepe-tab" data-bs-toggle="pill"
+                            data-bs-target="#info-pepe" type="button" role="tab" aria-controls="info-pepe"
+                            aria-selected="true">
+                            <div class="info-button-content">
+                                <span class="info-button-text">PEPE</span class="info-button-text">
+                                <img class="info-button-image" src="./assets/resources/img/textura-cafe.jpg"
+                                    alt="Botón Pepe">
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link info-button" id="info-bohio-tab" data-bs-toggle="pill"
+                            data-bs-target="#info-bohio" type="button" role="tab" aria-controls="info-bohio"
+                            aria-selected="false">
+                            <div class="info-button-content">
+                                <span class="info-button-text">BOHÍO</span class="info-button-text">
+                                <img class="info-button-image" src="./assets/resources/img/textura-helado.jpg"
+                                    alt="Botón Bohío">
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link info-button" id="info-masterchef-tab" data-bs-toggle="pill"
+                            data-bs-target="#info-masterchef" type="button" role="tab" aria-controls="info-masterchef"
+                            aria-selected="false">
+                            <div class="info-button-content">
+                                <span class="info-button-text">MASTERCHEF</span class="info-button-text">
+                                <img class="info-button-image" src="./assets/resources/img/textura-mermelada.jpg"
+                                    alt="Botón Masterchef">
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link info-button" id="info-premios-tab" data-bs-toggle="pill"
+                            data-bs-target="#info-premios" type="button" role="tab" aria-controls="info-premios"
+                            aria-selected="true">
+                            <div class="info-button-content">
+                                <span class="info-button-text">PREMIOS</span class="info-button-text">
+                                <img class="info-button-image" src="./assets/resources/img/textura-fresas.jpg"
+                                    alt="Botón Premios">
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content info-tabs">
+                    <div class="tab-pane fade show active" id="info-pepe" role="tabpanel"
+                        aria-labelledby="info-pepe-tab">
+                        <p>
+                            Pepe
+                            Rodríguez se crio en el entorno del restaurante familiar El Bohío, fundado como casa de
+                            comidas en
+                            1934
+                            por su abuela Valentina y su tía abuela Romana. Su padre, Diego Rodríguez Vallejo, fue
+                            novillero y
+                            fotógrafo taurino. Sus padres pasaron a hacerse cargo del restaurante y, al acabar Pepe el
+                            instituto
+                            (una época bastante dura para él), empezó a trabajar como camarero. Cuando su madre no pudo
+                            hacerse
+                            cargo de la cocina, tanto Pepe como su hermano Diego (actual jefe de sala) empezaron a
+                            turnarse
+                            entre
+                            los
+                            fogones.
+                            Comenzó a trabajar en la cocina con 22 años, y a esa misma edad presidía Amidemar, una
+                            asociación de
+                            ayuda al
+                            toxicómano en Illescas: "Salía de la cocina y me iba a echar un cable a chavales que lo
+                            estaban
+                            pasando
+                            mal".
+                        </p>
+                        <p>
+                            Vitoria fue donde conoció a los principales cocineros españoles y franceses de los años 80,
+                            y a las
+                            figuras actuales. En las vacaciones cuando no trabajaba en El Bohío iba allí para aprender
+                            de
+                            grandes
+                            maestros de la cocina. Sus principales mentores fueron Martín Berasategui y Ferrán Adriá.
+                            Ha afirmado que de pequeño quería ser cantante, pero que al empezar a trabajar en el
+                            restaurante
+                            descubrió su pasión como cocinero: "La cocina es mi pasión, cada día puedo hacer algo nuevo.
+                            Ésta es
+                            la
+                            grandeza
+                            del oficio".
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="info-bohio" role="tabpanel" aria-labelledby="info-bohio-tab">
+                        <p>
+                            La abuela Valentina era una mujer con muchísimo emprendimiento. Llegó de Cuba a Illescas con
+                            su
+                            hermana
+                            Romana antes de la guerra, vio que en la carretera entre Madrid y Toledo no había ningún
+                            lugar donde
+                            “repostar”, y en cuestión de meses, todo aquel que viajaba entre las dos ciudades paraba en
+                            El Bohío
+                            a
+                            probar su famosa receta de perdices escabechadas. ¿Por qué El Bohío? Porque el nombre les
+                            recordaba
+                            a
+                            las elevadas cabañas de madera típicas del Caribe.
+                        </p>
+                        <p>
+                            De la abuela Valentina pasó a las manos del padre de Pepe, novillero y fotógrafo taurino,
+                            quien
+                            forró
+                            todas las paredes de fotografías taurinas y objetos del gremio. Aquella versión taurina de
+                            El Bohío
+                            se
+                            vio obligada a cerrar sus puertas durante la postguerra. En 1971 volvieron a abrirlas.
+                            Cuando apenas
+                            tenían 17 años, Pepe y su hermano se unieron a la plantilla como camareros. Poco después,
+                            empezó la
+                            trayectoria de Pepe en la cocina. “No fue para ganar premios. Fue para salvar el negocio”.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="info-masterchef" role="tabpanel"
+                        aria-labelledby="info-masterchef-tab">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum accusantium, esse atque
+                            sunt ipsam
+                            saepe rem alias iure iste libero consequuntur magni recusandae. Officia iure cumque
+                            perferendis.
+                            Aliquam
+                            voluptatibus, dolorem ipsum vitae esse quibusdam reiciendis minima. Vero quo consectetur
+                            labore rem
+                            saepe iusto eveniet, neque corporis veniam explicabo, omnis autem harum. Fugit rerum ipsa
+                            ipsam a
+                            facere! Odio deleniti ratione adipisci ad nihil praesentium sapiente, a animi nostrum quo
+                            assumenda
+                            ex.
+                            Eum dolores hic architecto!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias sapiente
+                            explicabo,
+                            ratione
+                            corrupti quo odit mollitia saepe quisquam beatae asperiores earum aperiam fugit, recusandae,
+                            non
+                            incidunt officia perspiciatis modi? Sed ipsam iure blanditiis error voluptas molestiae! Amet
+                            alias
+                            unde
+                            ducimus perspiciatis quaerat! Consequuntur minima, ex, laboriosam repellendus ea autem
+                            ducimus
+                            quisquam
+                            eveniet recusandae numquam temporibus voluptate adipisci! Iusto, vel fuga provident, dolores
+                            odio
+                            libero
+                            tenetur sint numquam iste esse doloremque ex illum quas ducimus.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="info-premios" role="tabpanel" aria-labelledby="info-premios-tab">
+                        <p>Siendo ya su propietario, El Bohío recibió una estrella Michelín en 1999, y la preserva desde
+                            entonces.
+                        </p>
+                        <p>La guía más importante de alta cocina en España, 'Lo mejor de la gastronomía' del crítico
+                            Rafael
+                            García
+                            Santos, le otorgó el premio a Cocinero del año (2010) y el premio de repostero del año
+                            (2011).</p>
+                        <p>En el año 2011 recibe el premio Chef Millessime.</p>
+                        <p>La Real Academia Española de Gastronomía le concedió el Premio Nacional de Gastronomía 2010
+                            al mejor
+                            jefe
+                            de cocina.</p>
+                        <p>Ese mismo año fundó, junto a su hermano Diego, Iván Cerdeño y Rodrigo Delgado, el restaurante
+                            La casa
+                            de
+                            Carmen (Olías del Rey, Toledo), que en noviembre de 2013 también consiguió una estrella
+                            Michelín.
+                        </p>
+                        <p>Además de ser copropietario de ambos restaurantes, Pepe también cuenta con una empresa de
+                            asesoramiento
+                            de restaurantes, empresas y colectividades a través del grupo Bohío. El 26 de noviembre de
+                            2011 fue
+                            nombrado Empresario del Año porla Asociación empresarial Toledana.</p>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane fade" id="info-bohio" role="tabpanel" aria-labelledby="info-bohio-tab">
-                <p>
-                    La abuela Valentina era una mujer con muchísimo emprendimiento. Llegó de Cuba a Illescas con su
-                    hermana
-                    Romana antes de la guerra, vio que en la carretera entre Madrid y Toledo no había ningún lugar donde
-                    “repostar”, y en cuestión de meses, todo aquel que viajaba entre las dos ciudades paraba en El Bohío
-                    a
-                    probar su famosa receta de perdices escabechadas. ¿Por qué El Bohío? Porque el nombre les recordaba
-                    a
-                    las elevadas cabañas de madera típicas del Caribe.
-                </p>
-                <p>
-                    De la abuela Valentina pasó a las manos del padre de Pepe, novillero y fotógrafo taurino, quien
-                    forró
-                    todas las paredes de fotografías taurinas y objetos del gremio. Aquella versión taurina de El Bohío
-                    se
-                    vio obligada a cerrar sus puertas durante la postguerra. En 1971 volvieron a abrirlas. Cuando apenas
-                    tenían 17 años, Pepe y su hermano se unieron a la plantilla como camareros. Poco después, empezó la
-                    trayectoria de Pepe en la cocina. “No fue para ganar premios. Fue para salvar el negocio”.
-                </p>
-            </div>
-            <div class="tab-pane fade" id="info-masterchef" role="tabpanel" aria-labelledby="info-masterchef-tab">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum accusantium, esse atque sunt ipsam
-                    saepe rem alias iure iste libero consequuntur magni recusandae. Officia iure cumque perferendis.
-                    Aliquam
-                    voluptatibus, dolorem ipsum vitae esse quibusdam reiciendis minima. Vero quo consectetur labore rem
-                    saepe iusto eveniet, neque corporis veniam explicabo, omnis autem harum. Fugit rerum ipsa ipsam a
-                    facere! Odio deleniti ratione adipisci ad nihil praesentium sapiente, a animi nostrum quo assumenda
-                    ex.
-                    Eum dolores hic architecto!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias sapiente explicabo,
-                    ratione
-                    corrupti quo odit mollitia saepe quisquam beatae asperiores earum aperiam fugit, recusandae, non
-                    incidunt officia perspiciatis modi? Sed ipsam iure blanditiis error voluptas molestiae! Amet alias
-                    unde
-                    ducimus perspiciatis quaerat! Consequuntur minima, ex, laboriosam repellendus ea autem ducimus
-                    quisquam
-                    eveniet recusandae numquam temporibus voluptate adipisci! Iusto, vel fuga provident, dolores odio
-                    libero
-                    tenetur sint numquam iste esse doloremque ex illum quas ducimus.
-                </p>
-            </div>
-            <div class="tab-pane fade" id="info-premios" role="tabpanel" aria-labelledby="info-premios-tab">
-                <p>Siendo ya su propietario, El Bohío recibió una estrella Michelín en 1999, y la preserva desde
-                    entonces.
-                </p>
-                <p>La guía más importante de alta cocina en España, 'Lo mejor de la gastronomía' del crítico Rafael
-                    García
-                    Santos, le otorgó el premio a Cocinero del año (2010) y el premio de repostero del año (2011).</p>
-                <p>En el año 2011 recibe el premio Chef Millessime.</p>
-                <p>La Real Academia Española de Gastronomía le concedió el Premio Nacional de Gastronomía 2010 al mejor
-                    jefe
-                    de cocina.</p>
-                <p>Ese mismo año fundó, junto a su hermano Diego, Iván Cerdeño y Rodrigo Delgado, el restaurante La casa
-                    de
-                    Carmen (Olías del Rey, Toledo), que en noviembre de 2013 también consiguió una estrella Michelín.
-                </p>
-                <p>Además de ser copropietario de ambos restaurantes, Pepe también cuenta con una empresa de
-                    asesoramiento
-                    de restaurantes, empresas y colectividades a través del grupo Bohío. El 26 de noviembre de 2011 fue
-                    nombrado Empresario del Año porla Asociación empresarial Toledana.</p>
+        </div>
+        <div class="col col d-md-none d-xs-block col-md-12 mx-auto">
+            <div class="accordion accordion-flush" id="accordion-pepe">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="accordionOne">
+                        <button class="accordion-button info-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="info-accordion-content">
+                                <span class="info-button-text">PEPE</span class="info-button-text">
+                                <img class="info-button-image" src="./assets/resources/img/textura-cafe.jpg"
+                                    alt="Botón Pepe">
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="accordionOne"
+                        data-bs-parent="#accordion-pepe">
+                        <div class="accordion-body">
+                            <p>
+                                Pepe
+                                Rodríguez se crio en el entorno del restaurante familiar El Bohío, fundado como casa de
+                                comidas en
+                                1934
+                                por su abuela Valentina y su tía abuela Romana. Su padre, Diego Rodríguez Vallejo, fue
+                                novillero y
+                                fotógrafo taurino. Sus padres pasaron a hacerse cargo del restaurante y, al acabar Pepe
+                                el instituto
+                                (una época bastante dura para él), empezó a trabajar como camarero. Cuando su madre no
+                                pudo hacerse
+                                cargo de la cocina, tanto Pepe como su hermano Diego (actual jefe de sala) empezaron a
+                                turnarse
+                                entre
+                                los
+                                fogones.
+                                Comenzó a trabajar en la cocina con 22 años, y a esa misma edad presidía Amidemar, una
+                                asociación de
+                                ayuda al
+                                toxicómano en Illescas: "Salía de la cocina y me iba a echar un cable a chavales que lo
+                                estaban
+                                pasando
+                                mal".
+                            </p>
+                            <p>
+                                Vitoria fue donde conoció a los principales cocineros españoles y franceses de los años
+                                80, y a las
+                                figuras actuales. En las vacaciones cuando no trabajaba en El Bohío iba allí para
+                                aprender de
+                                grandes
+                                maestros de la cocina. Sus principales mentores fueron Martín Berasategui y Ferrán
+                                Adriá.
+                                Ha afirmado que de pequeño quería ser cantante, pero que al empezar a trabajar en el
+                                restaurante
+                                descubrió su pasión como cocinero: "La cocina es mi pasión, cada día puedo hacer algo
+                                nuevo. Ésta es
+                                la
+                                grandeza
+                                del oficio".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="accordionTwo">
+                        <button class="accordion-button info-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="info-accordion-content">
+                                <span class="info-button-text">BOHÍO</span class="info-button-text">
+                                <img class="info-button-image" src="./assets/resources/img/textura-helado.jpg"
+                                    alt="Botón Bohío">
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="accordionTwo"
+                        data-bs-parent="#accordion-pepe">
+                        <div class="accordion-body">
+                            <p>
+                                La abuela Valentina era una mujer con muchísimo emprendimiento. Llegó de Cuba a Illescas
+                                con su
+                                hermana
+                                Romana antes de la guerra, vio que en la carretera entre Madrid y Toledo no había ningún
+                                lugar donde
+                                “repostar”, y en cuestión de meses, todo aquel que viajaba entre las dos ciudades paraba
+                                en El Bohío
+                                a
+                                probar su famosa receta de perdices escabechadas. ¿Por qué El Bohío? Porque el nombre
+                                les recordaba
+                                a
+                                las elevadas cabañas de madera típicas del Caribe.
+                            </p>
+                            <p>
+                                De la abuela Valentina pasó a las manos del padre de Pepe, novillero y fotógrafo
+                                taurino, quien
+                                forró
+                                todas las paredes de fotografías taurinas y objetos del gremio. Aquella versión taurina
+                                de El Bohío
+                                se
+                                vio obligada a cerrar sus puertas durante la postguerra. En 1971 volvieron a abrirlas.
+                                Cuando apenas
+                                tenían 17 años, Pepe y su hermano se unieron a la plantilla como camareros. Poco
+                                después, empezó la
+                                trayectoria de Pepe en la cocina. “No fue para ganar premios. Fue para salvar el
+                                negocio”.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="accordionThree">
+                        <button class="accordion-button info-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="info-accordion-content">
+                                <span class="info-button-text">MASTERCHEF</span class="info-button-text">
+                                <img class="info-button-image" src="./assets/resources/img/textura-mermelada.jpg"
+                                    alt="Botón Masterchef">
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="accordionThree"
+                        data-bs-parent="#accordion-pepe">
+                        <div class="accordion-body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum accusantium, esse
+                                atque sunt ipsam
+                                saepe rem alias iure iste libero consequuntur magni recusandae. Officia iure cumque
+                                perferendis.
+                                Aliquam
+                                voluptatibus, dolorem ipsum vitae esse quibusdam reiciendis minima. Vero quo consectetur
+                                labore rem
+                                saepe iusto eveniet, neque corporis veniam explicabo, omnis autem harum. Fugit rerum
+                                ipsa ipsam a
+                                facere! Odio deleniti ratione adipisci ad nihil praesentium sapiente, a animi nostrum
+                                quo assumenda
+                                ex.
+                                Eum dolores hic architecto!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias sapiente
+                                explicabo,
+                                ratione
+                                corrupti quo odit mollitia saepe quisquam beatae asperiores earum aperiam fugit,
+                                recusandae, non
+                                incidunt officia perspiciatis modi? Sed ipsam iure blanditiis error voluptas molestiae!
+                                Amet alias
+                                unde
+                                ducimus perspiciatis quaerat! Consequuntur minima, ex, laboriosam repellendus ea autem
+                                ducimus
+                                quisquam
+                                eveniet recusandae numquam temporibus voluptate adipisci! Iusto, vel fuga provident,
+                                dolores odio
+                                libero
+                                tenetur sint numquam iste esse doloremque ex illum quas ducimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="accordionFour">
+                        <button class="accordion-button info-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="info-accordion-content">
+                                <span class="info-button-text">PREMIOS</span class="info-button-text">
+                                <img class="info-button-image" src="./assets/resources/img/textura-fresas.jpg"
+                                    alt="Botón Premios">
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="accordionFour"
+                        data-bs-parent="#accordion-pepe">
+                        <div class="accordion-body">
+                            <p>Siendo ya su propietario, El Bohío recibió una estrella Michelín en 1999, y la preserva
+                                desde
+                                entonces.
+                            </p>
+                            <p>La guía más importante de alta cocina en España, 'Lo mejor de la gastronomía' del crítico
+                                Rafael
+                                García
+                                Santos, le otorgó el premio a Cocinero del año (2010) y el premio de repostero del año
+                                (2011).</p>
+                            <p>En el año 2011 recibe el premio Chef Millessime.</p>
+                            <p>La Real Academia Española de Gastronomía le concedió el Premio Nacional de Gastronomía
+                                2010 al mejor
+                                jefe
+                                de cocina.</p>
+                            <p>Ese mismo año fundó, junto a su hermano Diego, Iván Cerdeño y Rodrigo Delgado, el
+                                restaurante La casa
+                                de
+                                Carmen (Olías del Rey, Toledo), que en noviembre de 2013 también consiguió una estrella
+                                Michelín.
+                            </p>
+                            <p>Además de ser copropietario de ambos restaurantes, Pepe también cuenta con una empresa de
+                                asesoramiento
+                                de restaurantes, empresas y colectividades a través del grupo Bohío. El 26 de noviembre
+                                de 2011 fue
+                                nombrado Empresario del Año porla Asociación empresarial Toledana.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

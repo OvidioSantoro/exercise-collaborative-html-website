@@ -12,14 +12,11 @@ body{
 
 .navbar{
     min-height: 8vh;
-}
-
-.navbar-brand {
+    font-size: 1.5rem;
 }
 
 .navbar-logo{
-    max-height: 8vh;
-    background: white;
+    max-height: 6vh;
 }
 
 
@@ -64,6 +61,18 @@ body{
 
 
 /* Estilos de la información adicional */
+
+.accordion-button:not(.collapsed) {
+    color: white;
+}
+
+.info-accordion-content{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
 .info-button{
     height: 14vh;
     padding: 0;
@@ -88,6 +97,7 @@ body{
 .info-button-text:hover, .info-button:hover{
     color: white
 }
+
 
 .info-button-image{
     height: 100%;
