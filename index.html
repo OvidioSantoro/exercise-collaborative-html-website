@@ -13,11 +13,11 @@
 
 <body>
 
-    <!-- Navbar con links a cada sección de la Landing Page. La Navbar permanece "pegada" a la parte superior de la vista  -->
+    <!--Sticky navbar with links to every section of the landing page  -->
     <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="img-fluid navbar-logo"
-                    src="./assets/resources/img/LogoPepe.svg" alt="Webpage Logo"></a>
+                    src="./assets/resources/img/LogoPepe.svg" alt="Logotipo de la página"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -26,54 +26,48 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link h-100" href="#presentacion">Presentación</a>
+                        <a class="nav-link" href="#presentation">Presentación</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bio">Biografía</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h-100" href="#carousel-novedades">Novedades</a>
+                        <a class="nav-link" href="#">Recetas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h-100" href="#biografia">Biografía</a>
+                        <a class="nav-link" href="#">Equipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h-100" href="#">Recetas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link h-100" href="#">Equipo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link h-100" href="#">Contacto</a>
+                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Carousel / Hero Image de presentación -->
-    <div id="carousel-novedades" class="carousel slide" data-bs-ride="carousel">
+    <!-- Carousel / Hero Image -->
+    <div id="news-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel-novedades" data-bs-slide-to="0" class="active"
+            <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel-novedades" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel-novedades" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active translucent-layer">
                 <img src="https://i.postimg.cc/sfPsP9kt/peperodriguez.jpg" class="d-block w-100 carousel-image"
                     alt="Pepe Rodriguez Rey" />
                 <div class="carousel-caption">
-                    <h1>Descubre El Bohío</h1>
-                    <h4>Acompáñanos en un paseo por El Bohío, el espectacular restaurante de Pepe Rodríguez Rey, y por
-                        su galardonada bodega.</h4>
+                    <h1>Pepe Rodriguez Rey</h1>
+                    <h4>¡Descubre todos los secretos de nuestor chef favorito!</h4>
                 </div>
             </div>
             <div class="carousel-item translucent-layer">
                 <img src="https://elbohio.net/files/sites/399/2020/11/bohio-restaurante-1.jpg"
                     class="d-block w-100 carousel-image" alt="El restaurante de Pepe Rodríguez">
                 <div class="carousel-caption">
-                    <h1>Second slide label</h1>
-                    <h4>Some representative placeholder content for the second slide.</h4>
+                    <h1>Descubre El Bohío</h1>
+                    <h4>Acompáñanos en un paseo por El Bohío, el espectacular restaurante de Pepe Rodríguez Rey, y por
+                        su galardonada bodega.</h4>
                 </div>
             </div>
             <div class="carousel-item translucent-layer">
@@ -85,59 +79,55 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-novedades" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#news-carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-novedades" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#news-carousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 
-    <div class="container-fluid presentacion">
+    <!-- COMENTAR -->
+
+    <div class="container-fluid presentation">
         <div class="row justify-content-center">
             <div class="col d-none d-lg-block col-lg-1 align-self-center">
-                <img class="img-fluid presentacion-img-1" src="./assets/resources/img/Oído cocina.png"
+                <img class="img-fluid presentation-img-1" src="./assets/resources/img/Oído cocina.png"
                     alt="¡Oído Cocina!">
             </div>
-            <div class="col-sm-12 col-lg-8 presentacion-texto">
+            <div class="col-sm-12 col-lg-8 presentation-text">
                 <div class="row">
-                    <h1>Breve presentación</h1>
-                    <h5>Una presentación de la página y su contenido</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac convallis enim. Vestibulum nec
-                        congue est. Sed nulla sem, dapibus non eros in, faucibus euismod leo. Maecenas viverra, sem ut
-                        malesuada volutpat, sapien velit tristique risus, non blandit est velit et leo. Donec egestas mi
-                        magna, convallis eleifend nisi cursus vel. Nullam quis enim dapibus, congue libero eu, volutpat
-                        ipsum. Aliquam aliquet arcu at urna egestas pretium. Nunc egestas massa nec pretium dictum. Sed
-                        id
-                        ligula nec dui convallis tincidunt. Praesent fermentum mi non blandit interdum. Vestibulum
-                        accumsan
-                        pretium diam, a commodo justo tristique a.
-                    </p>
-                    <p>
-                        Phasellus nisl orci, efficitur non malesuada sed, ultricies vitae nunc. Pellentesque habitant
-                        morbi
-                        tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eget nibh nec
-                        libero
-                        luctus gravida. Fusce elementum scelerisque magna, quis semper mauris porta ut. Nullam
-                        ullamcorper
-                        leo sed urna laoreet, vitae iaculis tellus volutpat. Donec iaculis viverra eros ac vestibulum.
-                        Praesent ac erat in enim efficitur vestibulum vel a augue. Vivamus placerat efficitur magna, et
-                        porta sapien consectetur id. Cras sagittis felis id placerat ullamcorper. Curabitur in ex ut
-                        libero
-                        lacinia feugiat at sit amet felis. Aliquam vulputate facilisis facilisis. Nam condimentum, magna
-                        quis sodales pellentesque, tortor eros feugiat enim, at commodo leo felis vitae urna. Nulla
-                        tristique eros quis enim tincidunt, ut malesuada ipsum euismod. Cras molestie est nulla, a
-                        cursus
-                        leo elementum vitae. In elementum velit et urna pellentesque pellentesque. Mauris elementum
-                        tristique ipsum, at vestibulum sem venenatis nec.
-                    </p>
+                    <h1>Pepe Rodríguez Rey</h1>
+                    <h5>¿Qué hace de Pepe el cocinero del momento?</h5>
+
+                    <p>Cuando en 1999 ya era propietario, gracias a su cocina de autor en 'El Bohío', recibió una estrella
+                    Michelín, en 2010 fue Cocinero del año y recibió el Premio Nacional de Gastronomía. También durante
+                    ese año fundó el restaurante 'La casa de Carmen' en Olías del Rey (Toledo) que tres años después
+                    recibía otra estrella Michelín esta vez por sus recetas innovadoras y de vanguardia, a la que aporta
+                    la tradición y el sabor de su tierra, La Mancha.</p>
+
+                    <p>En 2011, se llevó los premios: repostero del año y Chef Millessime. Además, en noviembre fue
+                    nombrado Empresario del Año por la Asociación empresarial Toledana. Rodríguez no solo es propietario
+                    de dos restaurante sino que también cuenta con una empresa de asesoramiento de restaurantes,
+                    empresas y colectividades a través del grupo Bohío.</p>
+
+                    <p>En 2013 fue seleccionado para formar parte del jurado de MasterChef, un programa de TVE que ha
+                    convertido las cosas del comer en un espectáculo televisivo de masas, liderando por encima de
+                    cualquier programa dentro de su franja horaria. Comparte protagonismo con Jordi Cruz Mas y Samantha
+                    Vallejo-Nágera.</p>
+
+                    <p>Durante un programa de 'En la tuya o en la mía' confesó a Bertín Osborne que uno de los peores
+                    momentos de su vida fue cuando el día 31 de diciembre de 2015 su madre se cayó y no pudo verle dando
+                    las Campanadas junto a Anne Igartiburu y Jordi Cruz. Falleció cuatro días más tarde, cuando él
+                    estaba grabando la final de la primera edición de 'Masterchef Junior' en 2016. Además, aseguró que
+                    la cocina no solamente es su trabajo sino también una obsesión por la que pierde día a día la
+                    cabeza.</p>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col col-sm-12 col-lg-12 presentacion-texto">
-                        <img class="img-fluid presentacion-img-2" src="./assets/resources/img/Bohio-Pepe.jpg"
+                    <div class="col col-sm-12 col-lg-12 presentation-texto">
+                        <img class="img-fluid presentation-img-2" src="./assets/resources/img/comida.svg"
                             alt="Un plato de Pepe">
                     </div>
                 </div>
@@ -195,7 +185,7 @@
                             aria-selected="true">
                             <div class="info-button-content">
                                 <span class="info-button-text">PREMIOS</span class="info-button-text">
-                                <img class="info-button-image" src="./assets/resources/img/textura-fresas.jpg"
+                                <img class="info-button-image" src="./assets/resources/img/textura-lentejas.jpg"
                                     alt="Botón Premios">
                             </div>
                         </button>
@@ -205,45 +195,25 @@
                 <div class="tab-content info-tabs">
                     <div class="tab-pane fade show active" id="info-pepe" role="tabpanel"
                         aria-labelledby="info-pepe-tab">
-                        <p>
-                            Pepe
-                            Rodríguez se crio en el entorno del restaurante familiar El Bohío, fundado como casa de
-                            comidas en
-                            1934
-                            por su abuela Valentina y su tía abuela Romana. Su padre, Diego Rodríguez Vallejo, fue
-                            novillero y
-                            fotógrafo taurino. Sus padres pasaron a hacerse cargo del restaurante y, al acabar Pepe el
-                            instituto
-                            (una época bastante dura para él), empezó a trabajar como camarero. Cuando su madre no pudo
-                            hacerse
-                            cargo de la cocina, tanto Pepe como su hermano Diego (actual jefe de sala) empezaron a
-                            turnarse
-                            entre
-                            los
-                            fogones.
-                            Comenzó a trabajar en la cocina con 22 años, y a esa misma edad presidía Amidemar, una
-                            asociación de
-                            ayuda al
-                            toxicómano en Illescas: "Salía de la cocina y me iba a echar un cable a chavales que lo
-                            estaban
-                            pasando
-                            mal".
-                        </p>
-                        <p>
-                            Vitoria fue donde conoció a los principales cocineros españoles y franceses de los años 80,
-                            y a las
-                            figuras actuales. En las vacaciones cuando no trabajaba en El Bohío iba allí para aprender
-                            de
-                            grandes
-                            maestros de la cocina. Sus principales mentores fueron Martín Berasategui y Ferrán Adriá.
-                            Ha afirmado que de pequeño quería ser cantante, pero que al empezar a trabajar en el
-                            restaurante
-                            descubrió su pasión como cocinero: "La cocina es mi pasión, cada día puedo hacer algo nuevo.
-                            Ésta es
-                            la
-                            grandeza
-                            del oficio".
-                        </p>
+                        <p>José Rodríguez Rey nació en Illescas (Toledo) el 13 de marzo de 1968. Se crió en el entorno
+                            del restaurante familiar 'El Bohío' fundado como casa de comidas unos años antes de la
+                            Guerra Civil Española por su abuela Valentina y su tía abuela, cuando regresaron de Cuba. El
+                            restaurante se hizo famoso porque era el único que había entre Toledo y Madrid.</p>
+
+                        <p>Teresa, la madre de Pepe Rodríguez, heredó 'El Bohío' siendo la cocinera de este a pesar de
+                            no tener idea alguna de restauración. El restaurante más tarde pasó a Rodríguez y a su
+                            hermano Diego, ya que su hermana se dedicó a estudiar y dejó a un lado la gastronomía.</p>
+
+                        <p>Por otro lado, su padre intentó ser torero pero no tuvo éxito por lo que decidió ser
+                            fotógrafo taurino aunque finalmente, pasó a formar parte del personal del restaurante donde
+                            Pepe Rodríguez comenzaría a trabajar al acabar el Instituto a pesar de que quería ser
+                            cantante.</p>
+
+                        <p>A los 22 años empezó en el mundo de los fogones, también a esa edad presidía Amidemar, una
+                            asociación de ayuda a toxicómanos en Illescas, trabajando en la ayuda de gente que sufría
+                            desarraigo social. En sus primero años como cocinero, en los años 80, conoció en Vitoria a
+                            los principales chefs españoles y franceses de esa temporada. Para Pepe Rodríguez sus
+                            mayores mentores fueron Martín Bersategui y Ferrán Adriá.</p>
                     </div>
                     <div class="tab-pane fade" id="info-bohio" role="tabpanel" aria-labelledby="info-bohio-tab">
                         <p>

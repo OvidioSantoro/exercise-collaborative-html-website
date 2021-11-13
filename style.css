@@ -16,14 +16,14 @@ body{
 }
 
 .navbar-logo{
-    max-height: 6vh;
+    max-height: 5rem;
 }
 
 
 /* Estilos del Carousel-Hero Image */
 
 .carousel-image{
-    height: 90vh;
+    height: 91vh;
     object-fit: cover;
     opacity: 70%;
 }
@@ -34,33 +34,37 @@ body{
 
 
 /* Estilos de la presentación */
-.presentacion{
-    max-width: 95vw;
+.presentation{
     margin: 10% 3% 10% 3%;
 }
 
-.presentacion-img-1{
+.presentation-img-1{
     height: 100%;
-    max-height: 70vh;
+    max-height: 50vh;
 }
 
-.presentacion-img-2{
-    height: 30vh;
+.presentation-img-2{
+    margin-bottom: 0;
+    max-height: 30vh;
     width: 100%;
 }
 
-.presentacion-texto{
+.presentation-text{
     max-height: 100%;
     text-align: justify;
     text-justify: inter-word;
 }
 
-.presentacion-texto p{
-    margin-top: 3vh;
+.presentation-text p{
+    margin-top: 1vh;
 }
 
 
 /* Estilos de la información adicional */
+
+.accordion-button{
+    color: darkgray;
+}
 
 .accordion-button:not(.collapsed) {
     color: white;
