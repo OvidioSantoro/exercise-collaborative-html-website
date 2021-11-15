@@ -35,3 +35,6 @@ Revisar y confirmar que el proyecto "merged" cumple todos los requisitos especif
 # Link a la galería: 
 https://postimg.cc/gallery/jNbgZBb --> Pepe
 https://elbohio.net/files/sites/399/2020/11/firma.svg
+
+ME FALLAN MARGENES AL MENOS EN VERSION PARA CELULARES
+QUITAR LAS FLESHITAS DEL ACORDIOOON
