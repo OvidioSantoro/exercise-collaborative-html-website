@@ -1,36 +1,39 @@
-div.container-fluid {
-    background: #F9F7F3;
-    display: block;
-    padding: 1%;
-
+/* STYLES OF THE LOWER HALF OF THE PAGE: */
+body {
+    background-color: #F9F7F3;   
+    
 }
 
-.title {
-    font-family: 'Yeseva One', cursive;
-    padding: 3%;
-    text-align: center;
-           
-}
+/* Recipe section style */
 
-
-.description {
-    font-family: 'Montserrat', sans-serif;
+.container-fluid {
+    background: #F9F7F3;    
+    padding: 3vh;
     margin: auto;
-    text-align: center;
-      
+    
 }
 
+.description-recipes p{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;      
+}
 
-.nav-tabs{
-    color: #fd7e14;
-    font-family: 'Montserrat', sans-serif;       
-        
+.title-recipes {
+    font-family: 'Yeseva One', cursive;
+    padding: 3vh;
+    text-align: center;
+}
+
+.nav-link{
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;      
 } 
 
-
-.card-body {
-    font-family: 'Montserrat', sans-serif;
-    
+.tab-content {
+    background: #F9F7F3;
+    padding: 3vh;   
 }
 
 .card-title {
@@ -38,3 +41,78 @@ div.container-fluid {
     color: #8a786e;
 }
 
+.card-text {
+    font-family: 'Montserrat', sans-serif;  
+}
+
+/* Style of the equipment section */
+
+.container-fluid-team {
+    background: #4a5c58;    
+    padding: 3vh;   
+    
+}
+
+.title-team {
+    font-family: 'Yeseva One', cursive;
+    padding: 3vh;
+    text-align: center;
+    color: #d6b7a4;               
+}
+
+.content-team {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color:#F9F7F3 ;
+    margin-left: 15%;
+    margin-right: 15%;    
+}
+
+.carousel-inner {
+    margin: auto;    
+}
+
+.carousel-caption h5{
+    color: #d6b7a4;
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;       
+}
+
+/* Suscription section style */
+
+.container-fluid-subscription {
+    background: #F9F7F3; 
+    margin: auto;   
+}
+
+.subscription {
+    font-family: 'Yeseva One', cursive;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+.description-subscription p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 5vh;
+    padding-bottom: 1vh;
+    text-align: center;      
+}
+
+.description-form {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;    
+}
+
+.landing-copyright {
+    background: #d6b7a4;       
+    padding-top: 3vh;      
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color:#F9F7F3;
+}
+
+.wheat {
+    width: 20vh;
+}
