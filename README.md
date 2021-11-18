@@ -4,11 +4,11 @@
 
 ## Objective
 
-The exercise is intended to practice the skills acquired in GIT while developing a typical website, so the Landing Page was divided into two general sections Header(Ovidio) and Footer(Keili).
+The exercise is intended to practice the skills acquired in GIT while developing a typical website, so the Landing Page was divided into two general sections Upper half (Ovidio) and lower half (Keili).
 
 The main theme selected for the website, is the chef of the restaurant El Bohío (Illescas) with a Michelin star and jury of the Spanish edition of MasterChef, Pepe Martinez.
 
-Three sections were created that make up the general Footer section.
+Three sections were created that make up the general lower half section.
 	- Recipes
 	- Team
 	- Subscription
