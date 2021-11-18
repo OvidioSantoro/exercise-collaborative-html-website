@@ -62,6 +62,7 @@ Additional information:
 - Container-fluid
 - Grid display (Rows and columns)
 - Accordion
+A brief call to action for users to get a voucher to give a tasting as a gift to a special person, and they are invited to get it by leaving their email in the box on the right side.
 
 Recipes section:
 - Container-fluid and Row
@@ -78,7 +79,7 @@ Subscription section:
 
 ## Application
 
-1. Run the project using: `$ pip3 install flask && python3 server.py`.
+1. Run the project using: `$ npx http-server --yes -c-1`.
 2. View the final result of the Landing Page.
 
 

@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans+Condensed:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Fjalla+One&family=Open+Sans+Condensed:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yeseva+One&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Pepe Rodriguez Rey</title>
@@ -19,7 +20,7 @@
 <body>
 
     <!--Sticky navbar with links to every section of the landing page  -->
-    <nav class="navbar pepe-navbar navbar-expand-md navbar-dark bg-dark sticky-top titleFont">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top titleFont">
         <div class="container-fluid container-nav">
             <a class="navbar-brand" href="#"><img class="img navbar-logo" src="./assets/resources/img/LogoPepe.svg"
                     alt="Logotipo de la página"></a>
@@ -39,13 +40,13 @@
                         <a class="nav-link" href="#bio">Biografía</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Recetas</a>
+                        <a class="nav-link" href="#recetas">Recetas</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Equipo</a>
+                        <a class="nav-link" href="#equipo">Equipo</a>
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Suscríbete</a>
+                        <a class="nav-link" href="#suscribe">Suscríbete</a>
                     </li>
                 </ul>
             </div>
@@ -70,8 +71,8 @@
                 </div>
             </div>
             <div class="carousel-item translucent-layer">
-                <img src="./assets/resources/img/Carousel-Bohio.jpg"
-                    class="d-block w-100 carousel-image" alt="El restaurante de Pepe Rodríguez">
+                <img src="./assets/resources/img/Carousel-Bohio.jpg" class="d-block w-100 carousel-image"
+                    alt="El restaurante de Pepe Rodríguez">
                 <div class="carousel-caption">
                     <h1>Descubre El Bohío</h1>
                     <h4>Acompáñanos en un paseo por El Bohío, el espectacular restaurante de Pepe Rodríguez Rey, y por
@@ -101,11 +102,11 @@
 
     <div class="container-fluid presentation" id="presentation">
         <div class="row justify-content-center">
-            <div class="col d-none d-lg-block col-lg-1 align-self-center">
+            <div class="col gx-1 d-none d-lg-block col-lg-1 align-self-center">
                 <img class="img-fluid presentation-img-1" src="./assets/resources/img/Oído cocina.png"
                     alt="¡Oído Cocina!">
             </div>
-            <div class="col-sm-12 col-lg-8 presentation-text">
+            <div class="col-sm-12 gx-3 col-lg-8 presentation-text">
                 <div class="row">
                     <h1>Pepe Rodríguez Rey</h1>
                     <h5>¿Qué hace de Pepe el cocinero del momento?</h5>
@@ -162,7 +163,7 @@
                 <div class="info-div">
                     <ul class="nav nav-pills nav-justified mb-3" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link info-button active" id="info-pepe-tab" data-bs-toggle="pill"
+                            <button class="nav-link px-0 info-button active" id="info-pepe-tab" data-bs-toggle="pill"
                                 data-bs-target="#info-pepe" type="button" role="tab" aria-controls="info-pepe"
                                 aria-selected="true">
                                 <div class="info-button-content">
@@ -173,7 +174,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link info-button" id="info-bohio-tab" data-bs-toggle="pill"
+                            <button class="nav-link px-0 info-button" id="info-bohio-tab" data-bs-toggle="pill"
                                 data-bs-target="#info-bohio" type="button" role="tab" aria-controls="info-bohio"
                                 aria-selected="false">
                                 <div class="info-button-content">
@@ -184,7 +185,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link info-button" id="info-masterchef-tab" data-bs-toggle="pill"
+                            <button class="nav-link px-0 info-button" id="info-masterchef-tab" data-bs-toggle="pill"
                                 data-bs-target="#info-masterchef" type="button" role="tab"
                                 aria-controls="info-masterchef" aria-selected="false">
                                 <div class="info-button-content">
@@ -195,7 +196,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link info-button" id="info-premios-tab" data-bs-toggle="pill"
+                            <button class="nav-link px-0 info-button" id="info-premios-tab" data-bs-toggle="pill"
                                 data-bs-target="#info-premios" type="button" role="tab" aria-controls="info-premios"
                                 aria-selected="true">
                                 <div class="info-button-content">
@@ -355,7 +356,8 @@
                             <button class="accordion-button info-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="info-accordion-content">
-                                    <span class="info-button-text titleFont">PEPE</span class="info-button-text titleFont">
+                                    <span class="info-button-text titleFont">PEPE</span
+                                        class="info-button-text titleFont">
                                     <img class="info-button-image" src="./assets/resources/img/textura-cafe.jpg"
                                         alt="Botón Pepe">
                                 </div>
@@ -422,7 +424,8 @@
                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 <div class="info-accordion-content">
-                                    <span class="info-button-text titleFont">BOHÍO</span class="info-button-text titleFont">
+                                    <span class="info-button-text titleFont">BOHÍO</span
+                                        class="info-button-text titleFont">
                                     <img class="info-button-image" src="./assets/resources/img/textura-helado.jpg"
                                         alt="Botón Bohío">
                                 </div>
@@ -474,7 +477,8 @@
                                 data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 <div class="info-accordion-content">
-                                    <span class="info-button-text titleFont">MASTERCHEF</span class="info-button-text titleFont">
+                                    <span class="info-button-text titleFont">MASTERCHEF</span
+                                        class="info-button-text titleFont">
                                     <img class="info-button-image" src="./assets/resources/img/textura-mermelada.jpg"
                                         alt="Botón Masterchef">
                                 </div>
@@ -528,7 +532,8 @@
                                 data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 <div class="info-accordion-content">
-                                    <span class="info-button-text titleFont">PREMIOS</span class="info-button-text titleFont">
+                                    <span class="info-button-text titleFont">PREMIOS</span
+                                        class="info-button-text titleFont">
                                     <img class="info-button-image" src="./assets/resources/img/textura-lentejas.jpg"
                                         alt="Botón Premios">
                                 </div>
@@ -577,9 +582,282 @@
         </div>
     </div>
 
+    <!-- LOWER HALF
+    Second section of the landing page, it will be divided into three containers with relevant information to:
+        1.- Recipes 
+        2.- Equipment
+        3.- Subscription
+    -->
+
+
+    <!-- Recipes
+     Breakdown of recipes according to type Traditional, Tasting or Seasonal
+        
+    -->
+
+    <div id="recetas" class="container-fluid-recipes">
+        <div class="row">
+            <div class="title-recipes">
+                <h1>Mis recetas</h1>
+            </div>
+            <div class="description-recipes">
+                <p> Lentejas con butifarra, las sopas de ajo de toda la vida, La pringá del cocido… Esos platos
+                    ancestrales se
+                    actualizan, se reinventan y se recrean hoy con muchísimo respeto, cariño y con ingredientes
+                    artesanales de
+                    primerísima calidad en nuestra gran cocina.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist" ;>
+            <button class="nav-link active bg-transparent text-dark" id="nav-traditional-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-traditional" type="button" role="tab" aria-controls="nav-traditional"
+                aria-selected="true">Tradicional</button>
+            <button class="nav-link bg-transparent text-dark" id="nav-tasting-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-tasting" type="button" role="tab" aria-controls="nav-tasting"
+                aria-selected="false">Degustación</button>
+            <button class="nav-link bg-transparent text-dark" id="nav-season-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-season" type="button" role="tab" aria-controls="nav-season"
+                aria-selected="false">Temporada</button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-traditional" role="tabpanel"
+            aria-labelledby="nav-traditional-tab">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-1.jpg.webp" class="card-img-top"
+                        alt="Escabeche de perdiz y foie gras, receta tradicional">
+                    <div class="card-body">
+                        <h5 class="card-title">Escabeche de perdiz y foie gras</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-2.jpg" class="card-img-top"
+                        alt="Lomo de orza y calabacín, merengue de frutos rojos y caballa, receta tradicional">
+                    <div class="card-body">
+                        <h5 class="card-title">Lomo de orza y calabacín, merengue de frutos rojos y caballa</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-3.jpg" class="card-img-top"
+                        alt="Pieza de cerdo ibérica con salsa de vino tinto y tubérculos, receta tradicional">
+                    <div class="card-body">
+                        <h5 class="card-title">Pieza de cerdo ibérica con salsa de vino tinto y tubérculos</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="nav-tasting" role="tabpanel" aria-labelledby="nav-tasting-tab">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-6.jpg" class="card-img-top"
+                        alt="Sardina ahumada, requesón y el caldo del Morteruelo, receta degustación">
+                    <div class="card-body">
+                        <h5 class="card-title">Sardina ahumada, requesón y el caldo del Morteruelo</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-8.jpg" class="card-img-top"
+                        alt="Lentejas con butifarra, croqueta de jamón, receta degustación">
+                    <div class="card-body">
+                        <h5 class="card-title">Lentejas con butifarra, croqueta de jamón</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-5.jpg" class="card-img-top"
+                        alt="receta 3 de ejemplo de sección TRADICIONAL">
+                    <div class="card-body">
+                        <h5 class="card-title">La Pringá del cocido, berza y su caldo.</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade show" id="nav-season" role="tabpanel" aria-labelledby="nav-season-tab">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-16.jpg" class="card-img-top"
+                        alt="Ventresca de atún, caldo especiado, aguacate, cilantro y soja, receta temporada">
+                    <div class="card-body">
+                        <h5 class="card-title">Ventresca de atún, caldo especiado, aguacate, cilantro y soja</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-13.jpg" class="card-img-top"
+                        alt="Financier de caza con cacahuete y setas, receta temporada">
+                    <div class="card-body">
+                        <h5 class="card-title">Financier de caza con cacahuete y setas</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-17.jpg" class="card-img-top"
+                        alt="Picaña de cordero, hinojo, careta y queso fresco especiado, receta temporada">
+                    <div class="card-body">
+                        <h5 class="card-title">Picaña de cordero, hinojo, careta y queso fresco especiado</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Team
+    Carousel containing photographs of the work team, making their plate preparations.
+
+    -->
+    <div id="equipo" class="container-fluid-team">
+        <div class="row">
+            <div class="title-team">
+                <h1>Mi equipazo</h1>
+            </div>
+            <div class="description">
+                <p class="content-team">Con el tiempo, y con los compromisos televisivos, mis funciones han cambiado en
+                    El
+                    Bohío. De ejecutar, he pasado a pensar. A diseñar. A probar. A coordinar. Ahora soy el conductor del
+                    tráfico.
+                    El que canta comandas: “dos bacalaos para la tres, tres pringás para la cuatro, unos callos para la
+                    ocho”. Yo
+                    dirijo el tráfico. Ellos conducen y te llevan a tu destino. Yo dirijo la orquesta y mi equipazo
+                    compone una
+                    sinfonía gastronómica manchega para ti.</p>
+            </div>
+
+        </div>
+
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+            </div>
+            <div class="carousel-inner" style="max-width: 60%;">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://elbohio.net/files/sites/399/2020/12/bohio-pepe-10.jpg" class="d-block w-100"
+                        alt="Fotografía de su equipo realizando los menús">
+                    <div class="carousel-caption shadow-sm p-3 mb-5 bg-dark d-none d-md-block">
+                        <h5>Juntos, recibimos una ESTRELLA MICHELÍN en 1999, y la preservamos desde entonces.</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-pepe-5.jpg" class="d-block w-100"
+                        alt="Fotografía de su equipo realizando los menús">
+                    <div class="carousel-caption shadow-sm p-3 mb-5 bg-dark d-none d-md-block">
+                        <h5>¡Gracias a mi equipazo y a todos los protagonistas en El Bohío, nuestros queridísimos
+                            clientes!</h5>
+
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Suscription
+    Section made with a simple FORM to request the email if you want to give a tasting as a gift.
+    A row for the COPYRIGHT bar is also included.
+
+    -->
+
+    <div id="suscribe" class="container-fluid-subscription">
+
+        <div class="row">
+            <div class="subscription col-sm-8 col-xl-8">
+                <h1>Regalar una experiencia con PEPE</h1>
+                <div class="description-subscription">
+                    <p>Es decir “me importas”. Es decir “quiero que vivas una experiencia que recordarás toda tu vida”.
+                        Es
+                        demostrar que hay regalos hechos con el corazón. ¡Y es garantizar que tu regalo no terminará en
+                        el cajón del
+                        olvido! </p>
+                    <p>Obsequia instantes memorables y gastronomía manchega “con Estrella” con un Bono de Regalo de
+                        PEPE.</p>
+                </div>
+            </div>
+
+
+
+            <div class="subscription col-sm-4 col-xl-4">
+                <div class="row wheat mx-auto">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/trigo1.png"
+                        class="d-none d-md-block w-1 mx-auto" alt="Fotografía de un trigo">
+                </div>
+
+                <div class="row">
+                    <form>
+                        <div class="subscription my-3 mx-3">
+                            <div class="description-form">
+                                <p>Consigue tu bono AQUÍ</p>
+                            </div>
+                            <input type="email" id="email" class="form-control" placeholder="Correo Electrónico" />
+                        </div>
+                        <button type="sutmit" class="btn btn-dark" style="width: 40%">¡Lo quiero!</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="landing-copyright">
+                <p> Todos los derechos reservados. Landing Page creada por Ovidio Santoro y Keili Rosales.</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
