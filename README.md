@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Exercise Collaborative HTML Website
 
 > By Ovidio Santoro and Keili Rosales
@@ -50,3 +51,6 @@ Subscription section:
 Comments or reports about the code at......
 
 Thank you very much!
+=======
+## TODO
+>>>>>>> a80d884fe3f5e4ab1fedb1b86807a69895332607
