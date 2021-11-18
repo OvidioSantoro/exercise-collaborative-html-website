@@ -1,0 +1,249 @@
+/* GLOBAL STYLES */
+body{
+    background-color: #F9F7F3;
+    max-width: 100vw;
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, .titleFont{
+    font-family: 'Yeseva One', cursive;
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
+
+/*
+    Styles of the landing page, arranged in order of appearance 
+*/
+
+
+/* Navbar's styles */
+.navbar{
+    min-height: 8vh;
+    font-size: 1.5rem;
+}
+
+.navbar-logo{
+    height: 5rem;
+}
+
+
+/* Carousel-Hero Image's styles */
+.carousel-image{
+    height: 92vh;
+    object-fit: cover;
+    opacity: 65%;
+}
+
+.translucent-layer{
+    background-color: rgba(0, 0, 0);
+}
+
+
+/* Presentation's styles */
+.presentation{
+    margin: 10% 0 10% 0;
+    scroll-margin-top: 10vh;
+}
+
+.presentation-img-1{
+    height: 100%;
+    max-height: 80vh;
+}
+
+.presentation-img-2{
+    margin-bottom: 0;
+    max-height: 30vh;
+    width: 100%;
+}
+
+.presentation-text{
+    max-height: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.presentation-text p{
+    margin-top: 1vh;
+}
+
+/* Biography's styles */
+.accordion-button {
+    color: darkgray;
+}
+
+.accordion-button::after{
+    all: unset;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+}
+
+.info-accordion-content{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.info-button{
+    height: 14vh;
+    padding: 0;
+}
+
+.info-button-content{
+    background-color: black;
+    height: 100%;
+    position: relative;
+}
+
+.info-button-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.info-button-text:hover, .info-button:hover{
+    color: white
+}
+
+.info-button-image{
+    height: 100%;
+    width: 100%;
+    opacity: 60%;
+}
+
+.info-div{
+    width: 100%;
+    padding: 0 5% 0 5%;
+}
+
+.info-tabs{
+    border: 2px solid darkgray;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.nav-link{
+    color: darkgray;
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;      
+}
+
+.tab-pane p{
+    text-align: justify;
+}
+
+/* Recipe section style */
+
+.container-fluid-recipes {
+    background: #F9F7F3;    
+    padding: 3vh;
+    margin: auto;
+    
+}
+
+.description-recipes p{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;      
+}
+
+.title-recipes {
+    font-family: 'Yeseva One', cursive;
+    padding: 3vh;
+    text-align: center;
+}
+
+.tab-content {
+    background: #F9F7F3;
+    padding: 3vh;   
+}
+
+.card-title {
+    font-family: 'Yeseva One', cursive;
+    color: #8a786e;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;  
+}
+
+/* Style of the equipment section */
+
+.container-fluid-team {
+    background: #4a5c58;    
+    padding: 3vh;   
+    
+}
+
+.title-team {
+    font-family: 'Yeseva One', cursive;
+    padding: 3vh;
+    text-align: center;
+    color: #d6b7a4;               
+}
+
+.content-team {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color:#F9F7F3 ;
+    margin-left: 15%;
+    margin-right: 15%;    
+}
+
+.carousel-inner {
+    margin: auto;    
+}
+
+.carousel-caption h5{
+    color: #d6b7a4;
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;       
+}
+
+/* Suscription section style */
+
+.container-fluid-subscription {
+    background: #F9F7F3; 
+    margin: auto;   
+}
+
+.subscription {
+    font-family: 'Yeseva One', cursive;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+.description-subscription p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 5vh;
+    padding-bottom: 1vh;
+    text-align: center;      
+}
+
+.description-form {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;    
+}
+
+.landing-copyright {
+    background: #d6b7a4;       
+    padding-top: 3vh;      
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color:#F9F7F3;
+}
+
+.wheat {
+    width: 20vh;
+}

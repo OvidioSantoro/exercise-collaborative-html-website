@@ -1,16 +1,863 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yeseva+One&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Pepe-Page (nombre provisional)</title>
+    <title>Pepe Rodriguez Rey</title>
 </head>
+
 <body>
-  
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--Sticky navbar with links to every section of the landing page  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top titleFont">
+        <div class="container-fluid container-nav">
+            <a class="navbar-brand" href="#"><img class="img navbar-logo" src="./assets/resources/img/LogoPepe.svg"
+                    alt="Logotipo de la página"></a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapseNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active px-1">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#presentation">Presentación</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#bio">Biografía</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#recetas">Recetas</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="#suscribe">Suscríbete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel / Hero Image with (fake) news -->
+    <div id="news-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active translucent-layer">
+                <img src="./assets/resources/img/Carousel-Pepe.jpg" class="d-block w-100 carousel-image"
+                    alt="Pepe Rodriguez Rey" />
+                <div class="carousel-caption">
+                    <h1>Pepe Rodriguez Rey</h1>
+                    <h4>¡Descubre todos los secretos de nuestor chef favorito!</h4>
+                </div>
+            </div>
+            <div class="carousel-item translucent-layer">
+                <img src="./assets/resources/img/Carousel-Bohio.jpg" class="d-block w-100 carousel-image"
+                    alt="El restaurante de Pepe Rodríguez">
+                <div class="carousel-caption">
+                    <h1>Descubre El Bohío</h1>
+                    <h4>Acompáñanos en un paseo por El Bohío, el espectacular restaurante de Pepe Rodríguez Rey, y por
+                        su galardonada bodega.</h4>
+                </div>
+            </div>
+            <div class="carousel-item translucent-layer">
+                <img src="./assets/resources/img/Carousel-Master.jpg" class="d-block w-100 carousel-image"
+                    alt="El restaurante de Pepe Rodríguez">
+                <div class="carousel-caption">
+                    <h1>Pepe en Masterchef</h1>
+                    <h4>¡Haz un repaso por los mejores momentos del chef como jurado de Masterchef!</h4>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#news-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#news-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- A brief presentation text with a couple of ornamental images for aesthetic purposes -->
+
+    <div class="container-fluid presentation" id="presentation">
+        <div class="row justify-content-center">
+            <div class="col gx-1 d-none d-lg-block col-lg-1 align-self-center">
+                <img class="img-fluid presentation-img-1" src="./assets/resources/img/Oído cocina.png"
+                    alt="¡Oído Cocina!">
+            </div>
+            <div class="col-sm-12 gx-3 col-lg-8 presentation-text">
+                <div class="row">
+                    <h1>Pepe Rodríguez Rey</h1>
+                    <h5>¿Qué hace de Pepe el cocinero del momento?</h5>
+
+                    <p>Cuando en 1999 ya era propietario, gracias a su cocina de autor en 'El Bohío', recibió una
+                        estrella
+                        Michelín, en 2010 fue Cocinero del año y recibió el Premio Nacional de Gastronomía. También
+                        durante
+                        ese año fundó el restaurante 'La casa de Carmen' en Olías del Rey (Toledo) que tres años después
+                        recibía otra estrella Michelín esta vez por sus recetas innovadoras y de vanguardia, a la que
+                        aporta
+                        la tradición y el sabor de su tierra, La Mancha.</p>
+
+                    <p>En 2011, se llevó los premios: repostero del año y Chef Millessime. Además, en noviembre fue
+                        nombrado Empresario del Año por la Asociación empresarial Toledana. Rodríguez no solo es
+                        propietario
+                        de dos restaurante sino que también cuenta con una empresa de asesoramiento de restaurantes,
+                        empresas y colectividades a través del grupo Bohío.</p>
+
+                    <p>En 2013 fue seleccionado para formar parte del jurado de MasterChef, un programa de TVE que ha
+                        convertido las cosas del comer en un espectáculo televisivo de masas, liderando por encima de
+                        cualquier programa dentro de su franja horaria. Comparte protagonismo con Jordi Cruz Mas y
+                        Samantha
+                        Vallejo-Nágera.</p>
+
+                    <p>Durante un programa de 'En la tuya o en la mía' confesó a Bertín Osborne que uno de los peores
+                        momentos de su vida fue cuando el día 31 de diciembre de 2015 su madre se cayó y no pudo verle
+                        dando
+                        las Campanadas junto a Anne Igartiburu y Jordi Cruz. Falleció cuatro días más tarde, cuando él
+                        estaba grabando la final de la primera edición de 'Masterchef Junior' en 2016. Además, aseguró
+                        que
+                        la cocina no solamente es su trabajo sino también una obsesión por la que pierde día a día la
+                        cabeza.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col col-sm-12 col-lg-12 presentation-texto">
+                        <img class="img-fluid presentation-img-2" src="./assets/resources/img/comida.svg"
+                            alt="Un plato de Pepe">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+        Biography and additional information. This section is built on a grid to change its structure and behaviour depending on the device's 
+        screen size. On big devices, this section is shown as a tab with buttons that change the information displayed inside the box below them. 
+        On smaller devices, it's structured as an accordion.
+    -->
+    <div class="container-fluid">
+        <div class="row" id="bio">
+            <div class="col d-none d-md-block col-lg-12">
+                <div class="info-div">
+                    <ul class="nav nav-pills nav-justified mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link px-0 info-button active" id="info-pepe-tab" data-bs-toggle="pill"
+                                data-bs-target="#info-pepe" type="button" role="tab" aria-controls="info-pepe"
+                                aria-selected="true">
+                                <div class="info-button-content">
+                                    <span class="info-button-text titleFont">PEPE</span>
+                                    <img class="info-button-image" src="./assets/resources/img/textura-cafe.jpg"
+                                        alt="Botón Pepe">
+                                </div>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link px-0 info-button" id="info-bohio-tab" data-bs-toggle="pill"
+                                data-bs-target="#info-bohio" type="button" role="tab" aria-controls="info-bohio"
+                                aria-selected="false">
+                                <div class="info-button-content">
+                                    <span class="info-button-text titleFont">BOHÍO</span>
+                                    <img class="info-button-image" src="./assets/resources/img/textura-helado.jpg"
+                                        alt="Botón Bohío">
+                                </div>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link px-0 info-button" id="info-masterchef-tab" data-bs-toggle="pill"
+                                data-bs-target="#info-masterchef" type="button" role="tab"
+                                aria-controls="info-masterchef" aria-selected="false">
+                                <div class="info-button-content">
+                                    <span class="info-button-text titleFont">MASTERCHEF</span>
+                                    <img class="info-button-image" src="./assets/resources/img/textura-mermelada.jpg"
+                                        alt="Botón Masterchef">
+                                </div>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link px-0 info-button" id="info-premios-tab" data-bs-toggle="pill"
+                                data-bs-target="#info-premios" type="button" role="tab" aria-controls="info-premios"
+                                aria-selected="true">
+                                <div class="info-button-content">
+                                    <span class="info-button-text titleFont">PREMIOS</span>
+                                    <img class="info-button-image" src="./assets/resources/img/textura-lentejas.jpg"
+                                        alt="Botón Premios">
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content info-tabs">
+                        <div class="tab-pane fade show active" id="info-pepe" role="tabpanel"
+                            aria-labelledby="info-pepe-tab">
+                            <p>José Rodríguez Rey nació en Illescas (Toledo) el 13 de marzo de 1968. Se crió en el
+                                entorno
+                                del restaurante familiar 'El Bohío' fundado como casa de comidas unos años antes de la
+                                Guerra Civil Española por su abuela Valentina y su tía abuela, cuando regresaron de
+                                Cuba. El
+                                restaurante se hizo famoso porque era el único que había entre Toledo y Madrid.</p>
+
+                            <p>Teresa, la madre de Pepe Rodríguez, heredó 'El Bohío' siendo la cocinera de este a pesar
+                                de
+                                no tener idea alguna de restauración. El restaurante más tarde pasó a Rodríguez y a su
+                                hermano Diego, ya que su hermana se dedicó a estudiar y dejó a un lado la gastronomía.
+                            </p>
+
+                            <p>Por otro lado, su padre intentó ser torero pero no tuvo éxito por lo que decidió ser
+                                fotógrafo taurino aunque finalmente, pasó a formar parte del personal del restaurante
+                                donde
+                                Pepe Rodríguez comenzaría a trabajar al acabar el Instituto a pesar de que quería ser
+                                cantante.</p>
+
+                            <p>A los 22 años empezó en el mundo de los fogones, también a esa edad presidía Amidemar,
+                                una
+                                asociación de ayuda a toxicómanos en Illescas, trabajando en la ayuda de gente que
+                                sufría
+                                desarraigo social. En sus primero años como cocinero, en los años 80, conoció en Vitoria
+                                a
+                                los principales chefs españoles y franceses de esa temporada. Para Pepe Rodríguez sus
+                                mayores mentores fueron Martín Bersategui y Ferrán Adriá.</p>
+                        </div>
+                        <div class="tab-pane fade" id="info-bohio" role="tabpanel" aria-labelledby="info-bohio-tab">
+                            <p>
+                                La abuela Valentina era una mujer con muchísimo emprendimiento. Llegó de Cuba a Illescas
+                                con
+                                su
+                                hermana
+                                Romana antes de la guerra, vio que en la carretera entre Madrid y Toledo no había ningún
+                                lugar donde
+                                “repostar”, y en cuestión de meses, todo aquel que viajaba entre las dos ciudades paraba
+                                en
+                                El Bohío
+                                a
+                                probar su famosa receta de perdices escabechadas. ¿Por qué El Bohío? Porque el nombre
+                                les
+                                recordaba
+                                a
+                                las elevadas cabañas de madera típicas del Caribe.
+                            </p>
+                            <p>
+                                De la abuela Valentina pasó a las manos del padre de Pepe, novillero y fotógrafo
+                                taurino,
+                                quien
+                                forró
+                                todas las paredes de fotografías taurinas y objetos del gremio. Aquella versión taurina
+                                de
+                                El Bohío
+                                se
+                                vio obligada a cerrar sus puertas durante la postguerra. En 1971 volvieron a abrirlas.
+                                Cuando apenas
+                                tenían 17 años, Pepe y su hermano se unieron a la plantilla como camareros. Poco
+                                después,
+                                empezó la
+                                trayectoria de Pepe en la cocina. “No fue para ganar premios. Fue para salvar el
+                                negocio”.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="info-masterchef" role="tabpanel"
+                            aria-labelledby="info-masterchef-tab">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum accusantium, esse
+                                atque
+                                sunt ipsam
+                                saepe rem alias iure iste libero consequuntur magni recusandae. Officia iure cumque
+                                perferendis.
+                                Aliquam
+                                voluptatibus, dolorem ipsum vitae esse quibusdam reiciendis minima. Vero quo consectetur
+                                labore rem
+                                saepe iusto eveniet, neque corporis veniam explicabo, omnis autem harum. Fugit rerum
+                                ipsa
+                                ipsam a
+                                facere! Odio deleniti ratione adipisci ad nihil praesentium sapiente, a animi nostrum
+                                quo
+                                assumenda
+                                ex.
+                                Eum dolores hic architecto!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias sapiente
+                                explicabo,
+                                ratione
+                                corrupti quo odit mollitia saepe quisquam beatae asperiores earum aperiam fugit,
+                                recusandae,
+                                non
+                                incidunt officia perspiciatis modi? Sed ipsam iure blanditiis error voluptas molestiae!
+                                Amet
+                                alias
+                                unde
+                                ducimus perspiciatis quaerat! Consequuntur minima, ex, laboriosam repellendus ea autem
+                                ducimus
+                                quisquam
+                                eveniet recusandae numquam temporibus voluptate adipisci! Iusto, vel fuga provident,
+                                dolores
+                                odio
+                                libero
+                                tenetur sint numquam iste esse doloremque ex illum quas ducimus.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="info-premios" role="tabpanel" aria-labelledby="info-premios-tab">
+                            <p>Siendo ya su propietario, El Bohío recibió una estrella Michelín en 1999, y la preserva
+                                desde
+                                entonces.
+                            </p>
+                            <p>La guía más importante de alta cocina en España, 'Lo mejor de la gastronomía' del crítico
+                                Rafael
+                                García
+                                Santos, le otorgó el premio a Cocinero del año (2010) y el premio de repostero del año
+                                (2011).</p>
+                            <p>En el año 2011 recibe el premio Chef Millessime.</p>
+                            <p>La Real Academia Española de Gastronomía le concedió el Premio Nacional de Gastronomía
+                                2010
+                                al mejor
+                                jefe
+                                de cocina.</p>
+                            <p>Ese mismo año fundó, junto a su hermano Diego, Iván Cerdeño y Rodrigo Delgado, el
+                                restaurante
+                                La casa
+                                de
+                                Carmen (Olías del Rey, Toledo), que en noviembre de 2013 también consiguió una estrella
+                                Michelín.
+                            </p>
+                            <p>Además de ser copropietario de ambos restaurantes, Pepe también cuenta con una empresa de
+                                asesoramiento
+                                de restaurantes, empresas y colectividades a través del grupo Bohío. El 26 de noviembre
+                                de
+                                2011 fue
+                                nombrado Empresario del Año porla Asociación empresarial Toledana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col d-md-none d-xs-block col-md-12 mx-auto">
+                <div class="accordion accordion-flush" id="accordion-pepe">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionOne">
+                            <button class="accordion-button info-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="info-accordion-content">
+                                    <span class="info-button-text titleFont">PEPE</span
+                                        class="info-button-text titleFont">
+                                    <img class="info-button-image" src="./assets/resources/img/textura-cafe.jpg"
+                                        alt="Botón Pepe">
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="accordionOne"
+                            data-bs-parent="#accordion-pepe">
+                            <div class="accordion-body">
+                                <p>
+                                    Pepe
+                                    Rodríguez se crio en el entorno del restaurante familiar El Bohío, fundado como casa
+                                    de
+                                    comidas en
+                                    1934
+                                    por su abuela Valentina y su tía abuela Romana. Su padre, Diego Rodríguez Vallejo,
+                                    fue
+                                    novillero y
+                                    fotógrafo taurino. Sus padres pasaron a hacerse cargo del restaurante y, al acabar
+                                    Pepe
+                                    el instituto
+                                    (una época bastante dura para él), empezó a trabajar como camarero. Cuando su madre
+                                    no
+                                    pudo hacerse
+                                    cargo de la cocina, tanto Pepe como su hermano Diego (actual jefe de sala) empezaron
+                                    a
+                                    turnarse
+                                    entre
+                                    los
+                                    fogones.
+                                    Comenzó a trabajar en la cocina con 22 años, y a esa misma edad presidía Amidemar,
+                                    una
+                                    asociación de
+                                    ayuda al
+                                    toxicómano en Illescas: "Salía de la cocina y me iba a echar un cable a chavales que
+                                    lo
+                                    estaban
+                                    pasando
+                                    mal".
+                                </p>
+                                <p>
+                                    Vitoria fue donde conoció a los principales cocineros españoles y franceses de los
+                                    años
+                                    80, y a las
+                                    figuras actuales. En las vacaciones cuando no trabajaba en El Bohío iba allí para
+                                    aprender de
+                                    grandes
+                                    maestros de la cocina. Sus principales mentores fueron Martín Berasategui y Ferrán
+                                    Adriá.
+                                    Ha afirmado que de pequeño quería ser cantante, pero que al empezar a trabajar en el
+                                    restaurante
+                                    descubrió su pasión como cocinero: "La cocina es mi pasión, cada día puedo hacer
+                                    algo
+                                    nuevo. Ésta es
+                                    la
+                                    grandeza
+                                    del oficio".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionTwo">
+                            <button class="accordion-button info-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <div class="info-accordion-content">
+                                    <span class="info-button-text titleFont">BOHÍO</span
+                                        class="info-button-text titleFont">
+                                    <img class="info-button-image" src="./assets/resources/img/textura-helado.jpg"
+                                        alt="Botón Bohío">
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="accordionTwo"
+                            data-bs-parent="#accordion-pepe">
+                            <div class="accordion-body">
+                                <p>
+                                    La abuela Valentina era una mujer con muchísimo emprendimiento. Llegó de Cuba a
+                                    Illescas
+                                    con su
+                                    hermana
+                                    Romana antes de la guerra, vio que en la carretera entre Madrid y Toledo no había
+                                    ningún
+                                    lugar donde
+                                    “repostar”, y en cuestión de meses, todo aquel que viajaba entre las dos ciudades
+                                    paraba
+                                    en El Bohío
+                                    a
+                                    probar su famosa receta de perdices escabechadas. ¿Por qué El Bohío? Porque el
+                                    nombre
+                                    les recordaba
+                                    a
+                                    las elevadas cabañas de madera típicas del Caribe.
+                                </p>
+                                <p>
+                                    De la abuela Valentina pasó a las manos del padre de Pepe, novillero y fotógrafo
+                                    taurino, quien
+                                    forró
+                                    todas las paredes de fotografías taurinas y objetos del gremio. Aquella versión
+                                    taurina
+                                    de El Bohío
+                                    se
+                                    vio obligada a cerrar sus puertas durante la postguerra. En 1971 volvieron a
+                                    abrirlas.
+                                    Cuando apenas
+                                    tenían 17 años, Pepe y su hermano se unieron a la plantilla como camareros. Poco
+                                    después, empezó la
+                                    trayectoria de Pepe en la cocina. “No fue para ganar premios. Fue para salvar el
+                                    negocio”.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionThree">
+                            <button class="accordion-button info-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <div class="info-accordion-content">
+                                    <span class="info-button-text titleFont">MASTERCHEF</span
+                                        class="info-button-text titleFont">
+                                    <img class="info-button-image" src="./assets/resources/img/textura-mermelada.jpg"
+                                        alt="Botón Masterchef">
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="accordionThree"
+                            data-bs-parent="#accordion-pepe">
+                            <div class="accordion-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum accusantium, esse
+                                    atque sunt ipsam
+                                    saepe rem alias iure iste libero consequuntur magni recusandae. Officia iure cumque
+                                    perferendis.
+                                    Aliquam
+                                    voluptatibus, dolorem ipsum vitae esse quibusdam reiciendis minima. Vero quo
+                                    consectetur
+                                    labore rem
+                                    saepe iusto eveniet, neque corporis veniam explicabo, omnis autem harum. Fugit rerum
+                                    ipsa ipsam a
+                                    facere! Odio deleniti ratione adipisci ad nihil praesentium sapiente, a animi
+                                    nostrum
+                                    quo assumenda
+                                    ex.
+                                    Eum dolores hic architecto!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias sapiente
+                                    explicabo,
+                                    ratione
+                                    corrupti quo odit mollitia saepe quisquam beatae asperiores earum aperiam fugit,
+                                    recusandae, non
+                                    incidunt officia perspiciatis modi? Sed ipsam iure blanditiis error voluptas
+                                    molestiae!
+                                    Amet alias
+                                    unde
+                                    ducimus perspiciatis quaerat! Consequuntur minima, ex, laboriosam repellendus ea
+                                    autem
+                                    ducimus
+                                    quisquam
+                                    eveniet recusandae numquam temporibus voluptate adipisci! Iusto, vel fuga provident,
+                                    dolores odio
+                                    libero
+                                    tenetur sint numquam iste esse doloremque ex illum quas ducimus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionFour">
+                            <button class="accordion-button info-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <div class="info-accordion-content">
+                                    <span class="info-button-text titleFont">PREMIOS</span
+                                        class="info-button-text titleFont">
+                                    <img class="info-button-image" src="./assets/resources/img/textura-lentejas.jpg"
+                                        alt="Botón Premios">
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="accordionFour"
+                            data-bs-parent="#accordion-pepe">
+                            <div class="accordion-body">
+                                <p>Siendo ya su propietario, El Bohío recibió una estrella Michelín en 1999, y la
+                                    preserva
+                                    desde
+                                    entonces.
+                                </p>
+                                <p>La guía más importante de alta cocina en España, 'Lo mejor de la gastronomía' del
+                                    crítico
+                                    Rafael
+                                    García
+                                    Santos, le otorgó el premio a Cocinero del año (2010) y el premio de repostero del
+                                    año
+                                    (2011).</p>
+                                <p>En el año 2011 recibe el premio Chef Millessime.</p>
+                                <p>La Real Academia Española de Gastronomía le concedió el Premio Nacional de
+                                    Gastronomía
+                                    2010 al mejor
+                                    jefe
+                                    de cocina.</p>
+                                <p>Ese mismo año fundó, junto a su hermano Diego, Iván Cerdeño y Rodrigo Delgado, el
+                                    restaurante La casa
+                                    de
+                                    Carmen (Olías del Rey, Toledo), que en noviembre de 2013 también consiguió una
+                                    estrella
+                                    Michelín.
+                                </p>
+                                <p>Además de ser copropietario de ambos restaurantes, Pepe también cuenta con una
+                                    empresa de
+                                    asesoramiento
+                                    de restaurantes, empresas y colectividades a través del grupo Bohío. El 26 de
+                                    noviembre
+                                    de 2011 fue
+                                    nombrado Empresario del Año porla Asociación empresarial Toledana.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOWER HALF
+    Second section of the landing page, it will be divided into three containers with relevant information to:
+        1.- Recipes 
+        2.- Equipment
+        3.- Subscription
+    -->
+
+
+    <!-- Recipes
+     Breakdown of recipes according to type Traditional, Tasting or Seasonal
+        
+    -->
+
+    <div id="recetas" class="container-fluid-recipes">
+        <div class="row">
+            <div class="title-recipes">
+                <h1>Mis recetas</h1>
+            </div>
+            <div class="description-recipes">
+                <p> Lentejas con butifarra, las sopas de ajo de toda la vida, La pringá del cocido… Esos platos
+                    ancestrales se
+                    actualizan, se reinventan y se recrean hoy con muchísimo respeto, cariño y con ingredientes
+                    artesanales de
+                    primerísima calidad en nuestra gran cocina.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist" ;>
+            <button class="nav-link active bg-transparent text-dark" id="nav-traditional-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-traditional" type="button" role="tab" aria-controls="nav-traditional"
+                aria-selected="true">Tradicional</button>
+            <button class="nav-link bg-transparent text-dark" id="nav-tasting-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-tasting" type="button" role="tab" aria-controls="nav-tasting"
+                aria-selected="false">Degustación</button>
+            <button class="nav-link bg-transparent text-dark" id="nav-season-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-season" type="button" role="tab" aria-controls="nav-season"
+                aria-selected="false">Temporada</button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-traditional" role="tabpanel"
+            aria-labelledby="nav-traditional-tab">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-1.jpg.webp" class="card-img-top"
+                        alt="Escabeche de perdiz y foie gras, receta tradicional">
+                    <div class="card-body">
+                        <h5 class="card-title">Escabeche de perdiz y foie gras</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-2.jpg" class="card-img-top"
+                        alt="Lomo de orza y calabacín, merengue de frutos rojos y caballa, receta tradicional">
+                    <div class="card-body">
+                        <h5 class="card-title">Lomo de orza y calabacín, merengue de frutos rojos y caballa</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-3.jpg" class="card-img-top"
+                        alt="Pieza de cerdo ibérica con salsa de vino tinto y tubérculos, receta tradicional">
+                    <div class="card-body">
+                        <h5 class="card-title">Pieza de cerdo ibérica con salsa de vino tinto y tubérculos</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="nav-tasting" role="tabpanel" aria-labelledby="nav-tasting-tab">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-6.jpg" class="card-img-top"
+                        alt="Sardina ahumada, requesón y el caldo del Morteruelo, receta degustación">
+                    <div class="card-body">
+                        <h5 class="card-title">Sardina ahumada, requesón y el caldo del Morteruelo</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-8.jpg" class="card-img-top"
+                        alt="Lentejas con butifarra, croqueta de jamón, receta degustación">
+                    <div class="card-body">
+                        <h5 class="card-title">Lentejas con butifarra, croqueta de jamón</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-5.jpg" class="card-img-top"
+                        alt="receta 3 de ejemplo de sección TRADICIONAL">
+                    <div class="card-body">
+                        <h5 class="card-title">La Pringá del cocido, berza y su caldo.</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade show" id="nav-season" role="tabpanel" aria-labelledby="nav-season-tab">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-16.jpg" class="card-img-top"
+                        alt="Ventresca de atún, caldo especiado, aguacate, cilantro y soja, receta temporada">
+                    <div class="card-body">
+                        <h5 class="card-title">Ventresca de atún, caldo especiado, aguacate, cilantro y soja</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-13.jpg" class="card-img-top"
+                        alt="Financier de caza con cacahuete y setas, receta temporada">
+                    <div class="card-body">
+                        <h5 class="card-title">Financier de caza con cacahuete y setas</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-menu-17.jpg" class="card-img-top"
+                        alt="Picaña de cordero, hinojo, careta y queso fresco especiado, receta temporada">
+                    <div class="card-body">
+                        <h5 class="card-title">Picaña de cordero, hinojo, careta y queso fresco especiado</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Team
+    Carousel containing photographs of the work team, making their plate preparations.
+
+    -->
+    <div id="equipo" class="container-fluid-team">
+        <div class="row">
+            <div class="title-team">
+                <h1>Mi equipazo</h1>
+            </div>
+            <div class="description">
+                <p class="content-team">Con el tiempo, y con los compromisos televisivos, mis funciones han cambiado en
+                    El
+                    Bohío. De ejecutar, he pasado a pensar. A diseñar. A probar. A coordinar. Ahora soy el conductor del
+                    tráfico.
+                    El que canta comandas: “dos bacalaos para la tres, tres pringás para la cuatro, unos callos para la
+                    ocho”. Yo
+                    dirijo el tráfico. Ellos conducen y te llevan a tu destino. Yo dirijo la orquesta y mi equipazo
+                    compone una
+                    sinfonía gastronómica manchega para ti.</p>
+            </div>
+
+        </div>
+
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+            </div>
+            <div class="carousel-inner" style="max-width: 60%;">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://elbohio.net/files/sites/399/2020/12/bohio-pepe-10.jpg" class="d-block w-100"
+                        alt="Fotografía de su equipo realizando los menús">
+                    <div class="carousel-caption shadow-sm p-3 mb-5 bg-dark d-none d-md-block">
+                        <h5>Juntos, recibimos una ESTRELLA MICHELÍN en 1999, y la preservamos desde entonces.</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/bohio-pepe-5.jpg" class="d-block w-100"
+                        alt="Fotografía de su equipo realizando los menús">
+                    <div class="carousel-caption shadow-sm p-3 mb-5 bg-dark d-none d-md-block">
+                        <h5>¡Gracias a mi equipazo y a todos los protagonistas en El Bohío, nuestros queridísimos
+                            clientes!</h5>
+
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Suscription
+    Section made with a simple FORM to request the email if you want to give a tasting as a gift.
+    A row for the COPYRIGHT bar is also included.
+
+    -->
+
+    <div id="suscribe" class="container-fluid-subscription">
+
+        <div class="row">
+            <div class="subscription col-sm-8 col-xl-8">
+                <h1>Regalar una experiencia con PEPE</h1>
+                <div class="description-subscription">
+                    <p>Es decir “me importas”. Es decir “quiero que vivas una experiencia que recordarás toda tu vida”.
+                        Es
+                        demostrar que hay regalos hechos con el corazón. ¡Y es garantizar que tu regalo no terminará en
+                        el cajón del
+                        olvido! </p>
+                    <p>Obsequia instantes memorables y gastronomía manchega “con Estrella” con un Bono de Regalo de
+                        PEPE.</p>
+                </div>
+            </div>
+
+
+
+            <div class="subscription col-sm-4 col-xl-4">
+                <div class="row wheat mx-auto">
+                    <img src="https://elbohio.net/files/sites/399/2020/11/trigo1.png"
+                        class="d-none d-md-block w-1 mx-auto" alt="Fotografía de un trigo">
+                </div>
+
+                <div class="row">
+                    <form>
+                        <div class="subscription my-3 mx-3">
+                            <div class="description-form">
+                                <p>Consigue tu bono AQUÍ</p>
+                            </div>
+                            <input type="email" id="email" class="form-control" placeholder="Correo Electrónico" />
+                        </div>
+                        <button type="sutmit" class="btn btn-dark" style="width: 40%">¡Lo quiero!</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="landing-copyright">
+                <p> Todos los derechos reservados. Landing Page creada por Ovidio Santoro y Keili Rosales.</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
